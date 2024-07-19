@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app uses Bluetooth to connect and communicate with nearby devices for enhanced functionality and user experience✨</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app uses Bluetooth to connect and communicate with nearby devices for enhanced functionality and user experience✨</string>
 </dict>
 </plist>

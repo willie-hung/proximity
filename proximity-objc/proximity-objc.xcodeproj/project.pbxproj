@@ -14,6 +14,7 @@
 		3634F8BB2C48CE2C00EA6D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3634F8BA2C48CE2C00EA6D9A /* Assets.xcassets */; };
 		3634F8BE2C48CE2C00EA6D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3634F8BC2C48CE2C00EA6D9A /* LaunchScreen.storyboard */; };
 		3634F8C12C48CE2C00EA6D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634F8C02C48CE2C00EA6D9A /* main.m */; };
+		3634F8CB2C4A197500EA6D9A /* CentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634F8CA2C4A197500EA6D9A /* CentralManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		3634F8BD2C48CE2C00EA6D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3634F8BF2C48CE2C00EA6D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3634F8C02C48CE2C00EA6D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3634F8CA2C4A197500EA6D9A /* CentralManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralManager.m; sourceTree = "<group>"; };
+		3634F8CC2C4A199E00EA6D9A /* CentralManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CentralManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +68,8 @@
 				3634F8AF2C48CE2A00EA6D9A /* AppDelegate.m */,
 				3634F8B12C48CE2A00EA6D9A /* SceneDelegate.h */,
 				3634F8B22C48CE2A00EA6D9A /* SceneDelegate.m */,
-				3634F8B42C48CE2A00EA6D9A /* ViewController.h */,
-				3634F8B52C48CE2A00EA6D9A /* ViewController.m */,
+				3634F8C82C4A190C00EA6D9A /* BLE */,
+				3634F8C72C4A185700EA6D9A /* VC */,
 				3634F8B72C48CE2A00EA6D9A /* Main.storyboard */,
 				3634F8BA2C48CE2C00EA6D9A /* Assets.xcassets */,
 				3634F8BC2C48CE2C00EA6D9A /* LaunchScreen.storyboard */,
@@ -74,6 +77,24 @@
 				3634F8C02C48CE2C00EA6D9A /* main.m */,
 			);
 			path = "proximity-objc";
+			sourceTree = "<group>";
+		};
+		3634F8C72C4A185700EA6D9A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3634F8B42C48CE2A00EA6D9A /* ViewController.h */,
+				3634F8B52C48CE2A00EA6D9A /* ViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3634F8C82C4A190C00EA6D9A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				3634F8CA2C4A197500EA6D9A /* CentralManager.m */,
+				3634F8CC2C4A199E00EA6D9A /* CentralManager.h */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +170,7 @@
 				3634F8B62C48CE2A00EA6D9A /* ViewController.m in Sources */,
 				3634F8B02C48CE2A00EA6D9A /* AppDelegate.m in Sources */,
 				3634F8C12C48CE2C00EA6D9A /* main.m in Sources */,
+				3634F8CB2C4A197500EA6D9A /* CentralManager.m in Sources */,
 				3634F8B32C48CE2A00EA6D9A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +323,8 @@
 				DEVELOPMENT_TEAM = 8S2KB4SWK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "proximity-objc/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Proximity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,6 +352,8 @@
 				DEVELOPMENT_TEAM = 8S2KB4SWK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "proximity-objc/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Proximity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
